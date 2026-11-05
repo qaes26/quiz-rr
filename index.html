@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>From Qais to His Princess Reem ❤️</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -284,227 +284,6 @@
             h1 { font-size: 1.8rem; }
             .btn { width: 100%; }
         }
-
-        /* Mobile-first responsive improvements */
-        html {
-            min-height: 100%;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-        }
-
-        body {
-            min-height: 100vh;
-            min-height: 100svh;
-            padding: max(76px, env(safe-area-inset-top)) 14px
-                     max(22px, env(safe-area-inset-bottom));
-            overflow-y: auto;
-            overscroll-behavior-y: contain;
-        }
-
-        .container {
-            width: min(100%, 600px);
-            max-width: 600px;
-            margin: auto;
-            padding: clamp(20px, 5vw, 32px);
-            border-radius: clamp(16px, 4vw, 22px);
-            overflow-wrap: anywhere;
-        }
-
-        h1 {
-            font-size: clamp(1.65rem, 6vw, 2.2rem);
-            line-height: 1.25;
-            overflow-wrap: break-word;
-        }
-
-        h2, h3 {
-            line-height: 1.35;
-            overflow-wrap: break-word;
-        }
-
-        .question-text {
-            font-size: clamp(1.08rem, 4.5vw, 1.3rem);
-            line-height: 1.55;
-            margin-bottom: 18px;
-            text-align: left;
-            overflow-wrap: anywhere;
-        }
-
-        .options-container {
-            gap: 11px;
-            margin-bottom: 20px;
-        }
-
-        .option {
-            width: 100%;
-            min-height: 56px;
-            display: flex;
-            align-items: center;
-            gap: 9px;
-            padding: 14px 15px;
-            border-radius: 14px;
-            font-size: clamp(.95rem, 3.8vw, 1rem);
-            line-height: 1.45;
-            overflow-wrap: anywhere;
-            text-align: left;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-        }
-
-        .option strong {
-            flex: 0 0 auto;
-        }
-
-        .btn {
-            min-height: 50px;
-            max-width: 100%;
-            padding: 13px 22px;
-            font-size: 1rem;
-            line-height: 1.3;
-            white-space: normal;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .music-btn {
-            top: max(12px, env(safe-area-inset-top));
-            right: max(12px, env(safe-area-inset-right));
-            width: 44px;
-            height: 44px;
-            font-size: 18px;
-        }
-
-        .feedback-overlay {
-            padding: 18px;
-            padding-top: max(18px, env(safe-area-inset-top));
-            padding-bottom: max(18px, env(safe-area-inset-bottom));
-            overflow-y: auto;
-        }
-
-        .feedback-content {
-            width: min(100%, 420px);
-            max-height: 85svh;
-            overflow-y: auto;
-            padding: clamp(22px, 6vw, 36px) clamp(16px, 5vw, 28px);
-            border-radius: 18px;
-            overflow-wrap: anywhere;
-        }
-
-        .feedback-icon {
-            font-size: clamp(42px, 12vw, 60px);
-        }
-
-        .feedback-content .arabic-text {
-            font-size: clamp(1.35rem, 6vw, 2rem) !important;
-            line-height: 1.5;
-        }
-
-        .feedback-content p {
-            font-size: clamp(1rem, 4.2vw, 1.2rem) !important;
-            line-height: 1.6;
-        }
-
-        .result-stats {
-            font-size: clamp(1rem, 4.2vw, 1.2rem);
-            overflow-wrap: anywhere;
-        }
-
-        .footer-message {
-            line-height: 1.7;
-            overflow-wrap: anywhere;
-        }
-
-        #question-counter {
-            line-height: 1.5;
-        }
-
-        button, .option {
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        @media (max-width: 480px) {
-            body {
-                justify-content: flex-start;
-                padding-left: 12px;
-                padding-right: 12px;
-            }
-
-            .container {
-                width: 100%;
-                padding: 21px 16px;
-                margin-top: auto;
-                margin-bottom: auto;
-            }
-
-            .question-text {
-                text-align: left;
-            }
-
-            .option:hover {
-                transform: none;
-            }
-
-            .btn:hover {
-                transform: none;
-            }
-
-            #next-btn {
-                position: sticky;
-                bottom: max(8px, env(safe-area-inset-bottom));
-                z-index: 20;
-                box-shadow: 0 5px 18px rgba(255, 215, 0, .25);
-            }
-
-            .result-stats p {
-                margin: 5px 0;
-            }
-        }
-
-        @media (max-width: 360px) {
-            body {
-                padding-left: 9px;
-                padding-right: 9px;
-            }
-
-            .container {
-                padding: 18px 13px;
-            }
-
-            .option {
-                padding: 13px 11px;
-                font-size: .92rem;
-            }
-
-            .music-btn {
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-        @media (max-height: 650px) and (max-width: 600px) {
-            body {
-                justify-content: flex-start;
-            }
-
-            .container {
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
-
-            .feedback-content {
-                max-height: 78svh;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                scroll-behavior: auto !important;
-                animation-duration: .01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: .01ms !important;
-            }
-        }
-
     </style>
 </head>
 <body>
@@ -579,48 +358,48 @@
     </div>
 
     <script>
-        // 40 Mixed Questions (English only)
+        // 40 Nursing & Health Questions extracted exclusively from the provided material
         const questions = [
-            { q: "Which planet is known as the Red Planet?", options: ["Venus", "Mars", "Jupiter", "Saturn"], answer: 1 },
-            { q: "What is the capital of France?", options: ["Rome", "Berlin", "Paris", "Madrid"], answer: 2 },
-            { q: "What is the largest ocean on Earth?", options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"], answer: 3 },
-            { q: "Who wrote 'Romeo and Juliet'?", options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"], answer: 1 },
-            { q: "What is the boiling point of water at sea level?", options: ["50°C", "100°C", "150°C", "200°C"], answer: 1 },
-            { q: "Which animal is known as the King of the Jungle?", options: ["Tiger", "Elephant", "Lion", "Bear"], answer: 2 },
-            { q: "What is the synonym of 'Beautiful'?", options: ["Ugly", "Gorgeous", "Terrible", "Awful"], answer: 1 },
-            { q: "How many continents are there in the world?", options: ["5", "6", "7", "8"], answer: 2 },
-            { q: "What is the hardest natural substance on Earth?", options: ["Gold", "Iron", "Diamond", "Silver"], answer: 2 },
-            { q: "If 5 cats can catch 5 mice in 5 minutes, how many minutes will it take 1 cat to catch 1 mouse?", options: ["1 minute", "5 minutes", "10 minutes", "25 minutes"], answer: 1 },
-            { q: "Which language is the most spoken worldwide (native and non-native)?", options: ["Spanish", "English", "Mandarin", "Hindi"], answer: 1 },
-            { q: "What is the antonym of 'Abundant'?", options: ["Plentiful", "Scarce", "Rich", "Full"], answer: 1 },
-            { q: "What does the 'HTML' stand for?", options: ["Hyper Text Markup Language", "High Tech Modern Language", "Hyperlink and Text Markup", "Home Tool Markup Language"], answer: 0 },
-            { q: "Which is the smallest country in the world?", options: ["Monaco", "Malta", "Vatican City", "San Marino"], answer: 2 },
-            { q: "What is the next number in the series: 2, 6, 12, 20, ...?", options: ["28", "30", "32", "36"], answer: 1 },
-            { q: "Choose the correct spelling:", options: ["Accommodate", "Acomodate", "Accomodate", "Acommodate"], answer: 0 },
-            { q: "Which color symbolizes royalty?", options: ["Red", "Purple", "Green", "Yellow"], answer: 1 },
-            { q: "Who painted the Mona Lisa?", options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"], answer: 2 },
-            { q: "Which is the longest river in the world?", options: ["Amazon", "Nile", "Yangtze", "Mississippi"], answer: 1 },
-            { q: "What do bees collect to make honey?", options: ["Pollen", "Nectar", "Leaves", "Water"], answer: 1 },
-            { q: "What is the past tense of the verb 'Fly'?", options: ["Flown", "Flyed", "Flew", "Flow"], answer: 2 },
-            { q: "If you rearrange the letters 'CIFAIPC', you get the name of an:", options: ["Ocean", "Country", "Animal", "City"], answer: 0 }, // PACIFIC
-            { q: "Which element has the chemical symbol 'O'?", options: ["Gold", "Oxygen", "Osmium", "Silver"], answer: 1 },
-            { q: "How many days are in a leap year?", options: ["364", "365", "366", "367"], answer: 2 },
-            { q: "Which part of speech describes a noun?", options: ["Verb", "Adverb", "Adjective", "Pronoun"], answer: 2 },
-            { q: "What is the most popular flower given on Valentine's Day?", options: ["Tulip", "Orchid", "Lily", "Rose"], answer: 3 },
-            { q: "A clock shows 3:15. What is the angle between the hour and minute hands?", options: ["0 degrees", "7.5 degrees", "15 degrees", "30 degrees"], answer: 1 },
-            { q: "What is the main ingredient in chocolate?", options: ["Vanilla", "Cocoa", "Sugar", "Milk"], answer: 1 },
-            { q: "Which shape has exactly five sides?", options: ["Hexagon", "Octagon", "Pentagon", "Heptagon"], answer: 2 },
-            { q: "Who is known as the 'Father of Computers'?", options: ["Alan Turing", "Charles Babbage", "Bill Gates", "Steve Jobs"], answer: 1 },
-            { q: "What is the opposite of 'Optimistic'?", options: ["Hopeful", "Pessimistic", "Joyful", "Happy"], answer: 1 },
-            { q: "Which musical instrument has 88 keys?", options: ["Guitar", "Violin", "Piano", "Flute"], answer: 2 },
-            { q: "What is the tallest mountain in the world?", options: ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"], answer: 1 },
-            { q: "In which country can you find the Eiffel Tower?", options: ["Italy", "Spain", "Germany", "France"], answer: 3 },
-            { q: "What does the phrase 'Piece of cake' mean?", options: ["Something delicious", "Something very easy", "A difficult task", "A small portion"], answer: 1 },
-            { q: "Which month has the shortest number of days?", options: ["January", "February", "March", "April"], answer: 1 },
-            { q: "What do you call a baby kangaroo?", options: ["Cub", "Pup", "Joey", "Foal"], answer: 2 },
-            { q: "What is the square root of 64?", options: ["6", "7", "8", "9"], answer: 2 },
-            { q: "Who was the first woman to win a Nobel Prize?", options: ["Mother Teresa", "Marie Curie", "Rosa Parks", "Amelia Earhart"], answer: 1 },
-            { q: "What is the primary language spoken in Brazil?", options: ["Spanish", "English", "Portuguese", "French"], answer: 2 }
+            { q: "According to the WHO, health is a state of complete physical, mental, and social well-being, not merely the absence of...[cite: 2]", options: ["Stress", "Disease or infirmity", "Pain", "Illness"], answer: 1 },
+            { q: "Nightingale defined health as a state of being well and using every power the individual possesses to the...[cite: 2]", options: ["Maximum level", "Fullest extent", "Best of their ability", "Highest degree"], answer: 1 },
+            { q: "In 1980, which organization defined health as a dynamic state where a person's developmental and behavioral potential is realized?[cite: 2]", options: ["WHO", "CDC", "American Nurses Association (ANA)", "Red Cross"], answer: 2 },
+            { q: "Health and illness are both considered to be...[cite: 2]", options: ["Static conditions", "Dynamic processes", "Unchangeable states", "Opposite phases"], answer: 1 },
+            { q: "On the health continuum, health and illness/disease are located at...[cite: 2]", options: ["The same point", "Opposite ends", "The middle section", "Random points"], answer: 1 },
+            { q: "Which term is described as an 'active state of being healthy, including living a lifestyle that promotes good physical, mental, and emotional health'?[cite: 2]", options: ["Wellness", "Illness", "Adaptation", "Recovery"], answer: 0 },
+            { q: "In a maladaptive state, an individual might develop persistent anxiety and sleep disturbances because their coping responses are...[cite: 2]", options: ["Effective", "Overwhelming", "Ineffective", "Normal"], answer: 2 },
+            { q: "Which human dimension of wellness involves the ability to carry out daily tasks?[cite: 2]", options: ["Emotional", "Intellectual", "Physical", "Sociocultural"], answer: 2 },
+            { q: "Intellectual wellness is defined as the ability to learn and use information effectively for personal, family, and...[cite: 2]", options: ["Financial growth", "Career development", "Social status", "Spiritual peace"], answer: 1 },
+            { q: "Which dimension of wellness involves the ability to manage stress and express feelings appropriately?[cite: 2]", options: ["Emotional", "Physical", "Spiritual", "Sociocultural"], answer: 0 },
+            { q: "Sociocultural wellness focuses on the ability to interact successfully with...[cite: 2]", options: ["Yourself", "Technology", "People and within the environment", "Animals"], answer: 2 },
+            { q: "The belief in some force that unites human beings and provides meaning and purpose to life relates to which wellness dimension?[cite: 2]", options: ["Spiritual", "Environmental", "Emotional", "Intellectual"], answer: 0 },
+            { q: "Environmental wellness means living in an environment that is...[cite: 2]", options: ["Crowded and noisy", "Safe, clean, and healthy", "Isolated and quiet", "Highly competitive"], answer: 1 },
+            { q: "Which model of health provides the narrowest interpretation of health?[cite: 2]", options: ["Role Performance Model", "Adaptive Model", "Agent-Host-Environment Model", "Clinical Model"], answer: 3 },
+            { q: "In the Clinical Model, health is identified by the absence of...[cite: 2]", options: ["Stress", "Signs and symptoms of disease or injury", "Negative thoughts", "Social interactions"], answer: 1 },
+            { q: "According to the Role Performance Model, sickness is defined as the inability to...[cite: 2]", options: ["Perform one's role", "Adapt to the environment", "Cope with stress", "Learn new things"], answer: 0 },
+            { q: "The Adaptive Model views health as the individual's ability to adapt effectively to changes in the...[cite: 2]", options: ["Workplace only", "Internal and external environment", "Social circle", "Financial status"], answer: 1 },
+            { q: "In the Adaptive Model, what is considered a 'failure in adaptation'?[cite: 2]", options: ["Wellness", "Health", "Disease", "Growth"], answer: 2 },
+            { q: "In the Agent-Host-Environment Model, bacteria or viruses are examples of which type of agent?[cite: 2]", options: ["Chemical", "Physical", "Psychosocial", "Biological"], answer: 3 },
+            { q: "Exposure to toxic chemicals, such as pesticides, represents which type of agent?[cite: 2]", options: ["Biological", "Chemical", "Physical", "Psychosocial"], answer: 1 },
+            { q: "In the Agent-Host-Environment Model, what represents prolonged stress or social isolation?[cite: 2]", options: ["Physical Agent", "Biological Agent", "Psychosocial Agent", "Host"], answer: 2 },
+            { q: "The 'Host' in the Agent-Host-Environment Model is defined as the person who...[cite: 2]", options: ["Cures the disease", "Causes the disease", "May or may not be at risk of acquiring disease", "Studies the disease"], answer: 2 },
+            { q: "Which of the following is an internal, non-modifiable variable affecting health?[cite: 2]", options: ["Diet", "Standard of living", "Genetic makeup", "Social support"], answer: 2 },
+            { q: "According to biological dimensions, osteoporosis is more common in...[cite: 2]", options: ["Males", "Children", "Females", "Adolescents"], answer: 2 },
+            { q: "Why are adolescents more prone to risk-taking behavior and injury than adults?[cite: 2]", options: ["Poor diet", "Striving to conform to peers", "Lack of sleep", "Genetic makeup"], answer: 1 },
+            { q: "Mind-body interactions and self-concept are examples of which type of internal factor?[cite: 2]", options: ["Biological", "Cognitive", "Psychologic (emotional)", "Environmental"], answer: 2 },
+            { q: "Which factor includes how a person feels about their self-esteem and physical body image?[cite: 2]", options: ["Genetic makeup", "Self-concept", "Lifestyle choices", "Standard of living"], answer: 1 },
+            { q: "Lifestyle choices and spiritual/religious beliefs are classified as which type of factors influencing health?[cite: 2]", options: ["Biological", "Cognitive or intellectual", "External", "Environmental"], answer: 1 },
+            { q: "Which of the following is considered an external variable affecting health?[cite: 2]", options: ["Age", "Sex", "Developmental level", "Standard of living (income, education)"], answer: 3 },
+            { q: "What term describes the extent to which an individual’s behavior coincides with medical or health advice?[cite: 2]", options: ["Adherence", "Adaptation", "Wellness", "Self-concept"], answer: 0 },
+            { q: "Which of the following is a factor affecting health care adherence?[cite: 2]", options: ["Genetic makeup", "Perceived severity of the healthcare problem", "Climate", "Age"], answer: 1 },
+            { q: "Illness is defined as a highly personal state in which a person's functioning is thought to be...[cite: 2]", options: ["Enhanced", "Diminished (reduced)", "Unchanged", "Optimal"], answer: 1 },
+            { q: "True or False: According to the presentation, illness is completely synonymous with disease.[cite: 2]", options: ["True", "False", "Only in acute cases", "Only in chronic cases"], answer: 1 },
+            { q: "Who is the only person that can truly say if he or she is ill?[cite: 2]", options: ["The doctor", "The nurse", "The person themselves", "The family"], answer: 2 },
+            { q: "The causation of a disease is called its...[cite: 2]", options: ["Etiology", "Symptom", "Adherence", "Host"], answer: 0 },
+            { q: "Which type of illness is characterized by severe symptoms of relatively short duration?[cite: 2]", options: ["Chronic Illness", "Maladaptive Illness", "Acute Illness", "Terminal Illness"], answer: 2 },
+            { q: "Which of the following is a characteristic of Chronic Illness?[cite: 2]", options: ["Sudden onset", "Short duration", "Quick subside of symptoms", "Often has periods of remissions and exacerbations"], answer: 3 },
+            { q: "According to Suchman's Stages of Illness, Stage 1 is the...[cite: 2]", options: ["Medical care contact", "Symptom experience", "Assumption of the sick role", "Recovery"], answer: 1 },
+            { q: "In which of Suchman’s stages does the person accept the sick role and seek confirmation?[cite: 2]", options: ["Stage 1", "Stage 2", "Stage 3", "Stage 4"], answer: 1 },
+            { q: "The effects of illness on the family can include...[cite: 2]", options: ["Loss of autonomy", "Role changes and increased demands on time", "Self-concept changes", "Body image changes"], answer: 1 }
         ];
 
         const correctMessages = [
@@ -674,9 +453,9 @@
         // Check Local Storage
         window.onload = () => {
             initBackground();
-            if(localStorage.getItem('reemExamProgress')) {
-                currentQuestionIndex = parseInt(localStorage.getItem('reemExamProgress'));
-                score = parseInt(localStorage.getItem('reemExamScore'));
+            if(localStorage.getItem('reemExamProgress2')) {
+                currentQuestionIndex = parseInt(localStorage.getItem('reemExamProgress2'));
+                score = parseInt(localStorage.getItem('reemExamScore2'));
                 if(currentQuestionIndex > 0 && currentQuestionIndex < questions.length) {
                     document.getElementById('continue-msg').style.display = 'block';
                     document.getElementById('start-btn').innerText = 'Resume Exam';
@@ -688,8 +467,8 @@
         };
 
         function resetProgress(reload = false) {
-            localStorage.removeItem('reemExamProgress');
-            localStorage.removeItem('reemExamScore');
+            localStorage.removeItem('reemExamProgress2');
+            localStorage.removeItem('reemExamScore2');
             currentQuestionIndex = 0;
             score = 0;
             if(reload) location.reload();
@@ -704,7 +483,6 @@
             document.getElementById('welcome-screen').classList.remove('active-screen');
             document.getElementById('quiz-screen').classList.add('active-screen');
             
-            // Try to play music automatically on first interaction
             if(!musicPlaying) toggleMusic();
             
             loadQuestion();
@@ -758,8 +536,8 @@
             }
 
             // Save Progress
-            localStorage.setItem('reemExamProgress', currentQuestionIndex + 1);
-            localStorage.setItem('reemExamScore', score);
+            localStorage.setItem('reemExamProgress2', currentQuestionIndex + 1);
+            localStorage.setItem('reemExamScore2', score);
 
             document.getElementById('next-btn').style.display = 'block';
         }
@@ -814,8 +592,8 @@
             }
 
             // Clear storage since exam is done
-            localStorage.removeItem('reemExamProgress');
-            localStorage.removeItem('reemExamScore');
+            localStorage.removeItem('reemExamProgress2');
+            localStorage.removeItem('reemExamScore2');
         }
 
         function createCelebration(symbol) {
